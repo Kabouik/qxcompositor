@@ -109,7 +109,7 @@ void WaylandView::setIsXwaylandWindow(bool isXwaylandWindow)
 
 void WaylandView::prepareView()
 {
-    //setColor(Qt::black);
+    setColor(Qt::black);
     rootContext()->setContextProperty("compositor", m_qmlCompositor);
     rootContext()->setContextProperty("view", this);
     setSource(SailfishApp::pathTo("qml/qxcompositor.qml"));
